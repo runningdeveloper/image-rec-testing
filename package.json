@@ -1,0 +1,26 @@
+{
+  "name": "image-rec-testing",
+  "version": "1.0.0",
+  "description": "## Hypothesis",
+  "main": "tensorflow-prediction.js",
+  "scripts": {
+    "start": "node tensorflow-prediction.js",
+    "test:tensorflow": "node inspect tensorflow-prediction.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runningdeveloper/image-rec-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/runningdeveloper/image-rec-testing/issues"
+  },
+  "homepage": "https://github.com/runningdeveloper/image-rec-testing#readme",
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.0.3",
+    "@tensorflow/tfjs": "^1.7.4",
+    "@tensorflow/tfjs-node": "^1.7.4"
+  }
+}
