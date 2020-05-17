@@ -8,7 +8,9 @@ const readline = require("readline");
 let model = null;
 
 const doImagePrediction = async () => {
+    console.time('Read Image');
   const imageFile = fs.readFileSync("./images/person1.jpg");
+  console.timeEnd('Read Image');
   console.time('Prediction');
   const img = tf.node.decodeImage(imageFile);
   const predictions = await model.detect(img);
@@ -24,9 +26,9 @@ const doImagePrediction = async () => {
   model = await cocoSsd.load();
   //   console.log("Press g when ready or q to quit");
 
-  setTimeout(()=>doImagePrediction(), 5000)
+//   setTimeout(()=>doImagePrediction(), 5000)
 
-  
+    doImagePrediction()
 
   //   process.stdin.on("keypress", (key, data) => {
   //     if (data.name === "q") {

@@ -5,7 +5,8 @@
   "main": "tensorflow-prediction.js",
   "scripts": {
     "start": "node tensorflow-prediction.js",
-    "test:tensorflow": "node inspect tensorflow-prediction.js",
+    "test:tensorflow": "node tensorflow-prediction.js",
+    "test:image": "node image-diff.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^2.0.3",
     "@tensorflow/tfjs": "^1.7.4",
-    "@tensorflow/tfjs-node": "^1.7.4"
+    "@tensorflow/tfjs-node": "^1.7.4",
+    "jimp": "^0.12.0"
   }
 }
