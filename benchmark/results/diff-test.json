@@ -1,0 +1,33 @@
+{
+  "name": "Diff functions Test",
+  "date": "2020-05-19T21:20:30.857Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "tensorflow prediction",
+      "ops": 8,
+      "margin": 5.06,
+      "percentSlower": 42.86
+    },
+    {
+      "name": "image diff jimp",
+      "ops": 14,
+      "margin": 1.1,
+      "percentSlower": 0
+    },
+    {
+      "name": "image distance",
+      "ops": 14,
+      "margin": 0.74,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "image diff jimp",
+    "index": 1
+  },
+  "slowest": {
+    "name": "tensorflow prediction",
+    "index": 0
+  }
+}

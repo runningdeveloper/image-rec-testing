@@ -1,0 +1,27 @@
+{
+  "name": "Two Images Test",
+  "date": "2020-05-19T21:20:25.595Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "tensorflow prediction",
+      "ops": 4,
+      "margin": 6.35,
+      "percentSlower": 20
+    },
+    {
+      "name": "image diff jimp",
+      "ops": 5,
+      "margin": 5.96,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "image diff jimp",
+    "index": 1
+  },
+  "slowest": {
+    "name": "tensorflow prediction",
+    "index": 0
+  }
+}
